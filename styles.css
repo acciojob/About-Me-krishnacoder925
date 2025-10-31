@@ -1,1 +1,105 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
+.profile-container {
+  background-color: #ffffff;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 15px;
+  padding: 30px 40px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #2196f3;
+  margin-bottom: 15px;
+}
+
+.section {
+  margin-bottom: 25px;
+}
+
+.section h2 {
+  color: #1976d2;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.section p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+}
+
+/* Skill Section */
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+  font-weight: 600;
+}
+
+.skill-info i {
+  color: #1976d2;
+  margin-right: 8px;
+}
+
+.badge {
+  background-color: #1976d2;
+  color: #fff;
+  border-radius: 10px;
+  padding: 3px 8px;
+  font-size: 0.8rem;
+}
+
+.progress {
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 10px;
+  margin-top: 6px;
+}
+
+.progress-bar {
+  height: 10px;
+  border-radius: 10px;
+}
+
+/* Individual Skill Colors */
+.progress-bar.html { width: 90%; background-color: #e44d26; }
+.progress-bar.css { width: 85%; background-color: #264de4; }
+.progress-bar.js { width: 75%; background-color: #f7df1e; }
+.progress-bar.react { width: 70%; background-color: #61dbfb; }
+
+/* Responsive */
+@media (max-width: 600px) {
+  .profile-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .section h2 {
+    font-size: 1.1rem;
+  }
+}
